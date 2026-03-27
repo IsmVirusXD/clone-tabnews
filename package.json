@@ -14,7 +14,9 @@
   "author": "",
   "main": "index.js",
   "scripts": {
-    "dev" : "next dev",
+    "dev": "next dev",
+    "lint:check": "prettier --check .",
+    "lint:fix": "prettier --write .",
     "build": "next build",
     "start": "next start"
   },
@@ -22,5 +24,8 @@
     "next": "^13.1.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.8.1"
   }
 }
